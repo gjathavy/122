@@ -56,18 +56,18 @@ const Hero = () => {
                 View My Work
                 <ArrowDown className="h-4 w-4" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                onClick={() => {
-                  // Placeholder - will be updated when CV is uploaded
-                  alert('CV will be available soon!');
-                }}
-              >
-                <Download className="h-4 w-4" />
-                Download CV
-              </Button>
+              
+              {/* Updated Download CV button */}
+              <a href="/files/my_cv.pdf" download>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                  <Download className="h-4 w-4" />
+                  Download CV
+                </Button>
+              </a>
             </div>
           </div>
 
